@@ -1,5 +1,52 @@
-<?php
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>تسجيل الدخول | ترقيم</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
 
-echo "hellow";
+<header class="header">
+  <div class="brand">
+    <img src="logo.png" width="80px" alt="Tarqeem Logo">
+    <div class="brand-text">
+      <span class="gold">ترقيم</span>
+      <span class="gray">للتدقيق اللغوي</span>
+    </div>
+  </div>
 
-?>
+  <nav class="nav">
+    <a href="index.html" class="active">Login</a>
+    <a href="register.html">Register</a>
+    <a href="content.html">Content</a>
+  </nav>
+
+  <div class="menu-toggle">☰</div>
+</header>
+
+<main class="login-page">
+  <h1>تسجيل الدخول</h1>
+
+  <form class="login-form" method="post" action="acount.html">
+    <input type="email" placeholder="البريد الإلكتروني" required>
+    <input type="password" placeholder="كلمة المرور" required>
+
+    <button type="submit">تسجيل الدخول</button>
+  </form>
+
+  <p class="register-link">
+    ليس لديك حساب؟
+    <a href="register.html">إنشاء حساب</a>
+  </p>
+</main>
+
+<script>
+  const toggle = document.querySelector('.menu-toggle');
+  const nav = document.querySelector('.nav');
+  toggle.onclick = () => nav.classList.toggle('open');
+</script>
+
+</body>
+</html>
