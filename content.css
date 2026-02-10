@@ -1,0 +1,97 @@
+/* ===== Content Page Layout ===== */
+.content-page {
+  max-width: 1100px;
+  margin: 90px auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.content-page h1 {
+  font-size: 34px;
+  color: #7a8a9a;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  font-size: 15px;
+  color: #8c98a6;
+  margin-bottom: 45px;
+}
+
+/* ===== Steps Container ===== */
+.steps {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+}
+
+/* ===== Step Card ===== */
+.step-card {
+  width: 320px;
+  background: #ffffff;
+  border: 1px solid #ececec;
+  border-radius: 14px;
+  padding: 24px 18px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+}
+
+/* ===== Step Icon ===== */
+.step-icon {
+  width: 70px;
+  height: 70px;
+  margin: 0 auto 16px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  font-size: 28px;
+  color: #ffffff;
+}
+
+/* Colors for each step */
+.step-1 .step-icon {
+  background-color: #2f6fb7;
+}
+
+.step-2 .step-icon {
+  background-color: #d4a017;
+}
+
+.step-3 .step-icon {
+  background-color: #4b8a49;
+}
+
+/* ===== Step Text ===== */
+.step-card h2 {
+  font-size: 18px;
+  color: #44515f;
+  margin-bottom: 10px;
+}
+
+.step-card p {
+  font-size: 14px;
+  color: #7a8a9a;
+  line-height: 1.7;
+}
+
+/* ===== Arrow Between Steps ===== */
+.step-arrow {
+  font-size: 28px;
+  color: #cfcfcf;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 992px) {
+  .steps {
+    flex-direction: column;
+  }
+
+  .step-arrow {
+    display: none;
+  }
+
+  .step-card {
+    width: 100%;
+    max-width: 520px;
+  }
+}

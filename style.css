@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+}
+
+body {
+  background: #f7f7f5;
+  color: #555;
+}
+
+/* ===== Header ===== */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.brand img {
+  width: 40px; /* لوغو صغير */
+}
+
+.brand-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+}
+
+.gold {
+  color: #d4a017;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.gray {
+  color: #7a8a9a;
+  font-size: 14px;
+}
+
+/* ===== Nav ===== */
+.nav {
+  display: flex;
+  gap: 24px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #777;
+  font-weight: 500;
+}
+
+.nav a.active,
+.nav a:hover {
+  color: #d4a017;
+}
+
+/* ===== Mobile ===== */
+.menu-toggle {
+  display: none;
+  font-size: 26px;
+  cursor: pointer;
+}
+
+/* ===== Login Page ===== */
+.login-page {
+  max-width: 420px;
+  margin: 100px auto;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.login-page h1 {
+  margin-bottom: 30px;
+  color: #7a8a9a;
+}
+
+/* ===== Form ===== */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.login-form input {
+  padding: 14px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 15px;
+}
+
+.login-form button {
+  background: #d4a017;
+  color: #fff;
+  border: none;
+  padding: 14px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.login-form button:hover {
+  opacity: 0.9;
+}
+
+.register-link {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.register-link a {
+  color: #d4a017;
+  text-decoration: none;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .nav {
+    position: absolute;
+    top: 80px;
+    right: 20px;
+    background: #fff;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    display: none;
+  }
+
+  .nav.open {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+  
+.brand img {
+  height: 80px;
+  width: auto;
+}
+
+
+
+}

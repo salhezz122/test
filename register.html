@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>إنشاء حساب | ترقيم</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<header class="header">
+  <div class="brand">
+    <img src="logo.png" alt="Tarqeem Logo">
+    <div class="brand-text">
+      <span class="gold">ترقيم</span>
+      <span class="gray">للتدقيق اللغوي</span>
+    </div>
+  </div>
+
+  <nav class="nav">
+    <a href="index.html">Login</a>
+    <a href="register.html" class="active">Register</a>
+    <a href="content.html">Content</a>
+  </nav>
+
+  <div class="menu-toggle">☰</div>
+</header>
+
+<main class="login-page">
+  <h1>إنشاء حساب</h1>
+
+  <form class="login-form">
+    <input type="text" placeholder="الاسم الأول" required>
+    <input type="text" placeholder="اسم العائلة" required>
+    <input type="text" placeholder="اسم المستخدم" required>
+
+    <input type="password" placeholder="كلمة المرور" required>
+    <input type="password" placeholder="تأكيد كلمة المرور" required>
+
+    <input type="tel" placeholder="رقم الهاتف (اختياري)">
+
+    <button type="submit">إنشاء حساب</button>
+  </form>
+
+  <p class="register-link">
+    لديك حساب؟
+    <a href="index.html">تسجيل الدخول</a>
+  </p>
+</main>
+
+<script>
+  const toggle = document.querySelector('.menu-toggle');
+  const nav = document.querySelector('.nav');
+  toggle.onclick = () => nav.classList.toggle('open');
+</script>
+
+</body>
+</html>
